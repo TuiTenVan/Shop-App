@@ -64,7 +64,7 @@ public class JwtTokenFilter extends OncePerRequestFilter{
         }catch (Exception e) {
             response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
         }
-
+  
     }
     private boolean isBypassToken(@NonNull HttpServletRequest request) {
         final List<Pair<String, String>> bypassTokens = Arrays.asList(
