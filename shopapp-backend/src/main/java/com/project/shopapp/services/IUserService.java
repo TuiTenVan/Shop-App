@@ -2,7 +2,6 @@ package com.project.shopapp.services;
 
 import com.project.shopapp.dtos.UpdateUserDTO;
 import com.project.shopapp.dtos.UserDTO;
-import com.project.shopapp.exceptions.DataNotFoundException;
 import com.project.shopapp.models.User;
 
 public interface IUserService {
@@ -11,3 +10,4 @@ public interface IUserService {
     User getUserDetailsFromToken(String token) throws Exception;
     User updateUser(Long userId, UpdateUserDTO updatedUserDTO) throws Exception;
 }
+ 

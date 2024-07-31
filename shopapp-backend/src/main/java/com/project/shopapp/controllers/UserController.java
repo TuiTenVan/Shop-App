@@ -29,7 +29,7 @@ public class UserController {
 
     @PostMapping("/register")
     //can we register an "admin" user ?
-    public ResponseEntity<RegisterResponse> createUser(
+    public ResponseEntity<RegisterResponse> createUser( 
             @Valid @RequestBody UserDTO userDTO,
             BindingResult result
     ) {

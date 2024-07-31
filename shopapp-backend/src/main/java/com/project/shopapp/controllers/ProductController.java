@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class ProductController {
     private static final Logger logger = LoggerFactory.getLogger(ProductController.class);
-    private final IProductService productService;
+    private final IProductService productService;  
     private final LocalizationUtils localizationUtils;
 
     @PostMapping("")
@@ -243,7 +243,7 @@ public class ProductController {
     public ResponseEntity<?> updateProduct(
             @PathVariable long id,
             @RequestBody ProductDTO productDTO) {
-        try {
+        try {   
             Product updatedProduct = productService.updateProduct(id, productDTO);
             return ResponseEntity.ok(updatedProduct);
         } catch (Exception e) {

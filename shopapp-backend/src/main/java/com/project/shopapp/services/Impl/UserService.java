@@ -32,7 +32,7 @@ public class UserService implements IUserService {
     private final JwtTokenUtils jwtTokenUtil;
     private final AuthenticationManager authenticationManager;
     private final LocalizationUtils localizationUtils;
-    @Override
+    @Override  
     @Transactional
     public User createUser(UserDTO userDTO) throws Exception {
         //register user
